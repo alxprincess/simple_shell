@@ -18,7 +18,7 @@ int _erratoi(char *v)
 		if (v[j] >= '0' && v[j] <= '9')
 		{
 			result *= 10;
-			result += (s[j] - '0');
+			result += (v[j] - '0');
 			if (result > INT_MAX)
 				return (-1);
 		}

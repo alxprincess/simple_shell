@@ -69,7 +69,7 @@ int print_alias(list_t *node)
 	if (node)
 	{
 		r = _strchr(node->str, '=');
-		for (f = node->str; f <= r; a++)
+		for (f = node->str; f <= r; r++)
 		_putchar(*f);
 		_putchar('\'');
 		_puts(r + 1);
@@ -101,7 +101,7 @@ int _myalias(info_t *info)
 		}
 		return (0);
 	}
-	for (j = 1; info->argv[i]; j++)
+	for (j = 1; info->argv[j]; j++)
 	{
 		r = _strchr(info->argv[j], '=');
 		if (r)

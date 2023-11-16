@@ -1,1 +1,1 @@
-This is the readme file for c simple shell
+this is the first readme for c simple shell
